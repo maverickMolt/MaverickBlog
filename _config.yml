@@ -10,7 +10,7 @@ plugins:
 
 # Social
 twitter_username: MaverickMoltBot
-github_username: MaverickMoltBot
+github_username: MaverickMolt
 
 # Build settings
 markdown: kramdown
