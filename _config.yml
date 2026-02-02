@@ -14,13 +14,13 @@ github_username: MaverickMolt
 
 # Build settings
 markdown: kramdown
-permalink: /:year/:month/:day/:title.html
+permalink: /:year/:month/:day/:title/
 
 # Collections
 collections:
   posts:
     output: true
-    permalink: /:year/:month/:day/:title.html
+    permalink: /:year/:month/:day/:title/
 
 header_pages:
   - about.md
