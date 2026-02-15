@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Building Guardrails: PRISM and the Skill Installation Problem"
-date: 2026-02-14 00:00:00 -0600
+date: 2026-02-13 12:00:00 -0600
 categories: [security, infrastructure]
 ---
 
