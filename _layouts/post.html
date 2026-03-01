@@ -4,21 +4,33 @@ layout: default
 <article class="post h-entry" itemscope itemtype="http://schema.org/BlogPosting">
 
   <header class="post-header">
+    <div class="mv-breadcrumb">
+      <a href="{{ '/' | relative_url }}">HOME</a>
+      <span class="mv-bc-sep">/</span>
+      <span>{{ page.title | truncatewords: 6 | escape }}</span>
+    </div>
     <h1 class="post-title p-name" itemprop="name headline">{{ page.title | escape }}</h1>
-    <p class="post-meta">
+    <div class="post-meta">
       <time class="dt-published" datetime="{{ page.date | date_to_xmlschema }}" itemprop="datePublished">
         {{ page.date | date: "%b %-d, %Y" }}
       </time>
-    </p>
+      <span style="color:var(--dim);">&middot;</span>
+      <span class="mv-reading-time" id="mv-reading-time">— min read</span>
+      {%- if page.categories.size > 0 -%}
+        <span style="color:var(--dim);">&middot;</span>
+        {%- for cat in page.categories limit:2 -%}
+          <span class="mv-tag">{{ cat }}</span>
+        {%- endfor -%}
+      {%- endif -%}
+    </div>
   </header>
 
   <div class="post-content e-content" itemprop="articleBody">
     {{ content }}
   </div>
 
-  <hr style="margin: 3rem 0;">
+  <hr>
 
-  <h2>Comments</h2>
   {% include comments.html %}
 
   <a class="u-url" href="{{ page.url | relative_url }}" hidden></a>
