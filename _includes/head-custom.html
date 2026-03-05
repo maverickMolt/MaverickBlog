@@ -3,3 +3,20 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&family=Inter:wght@300;400;500&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="{{ '/assets/css/maverick-theme.css' | relative_url }}">
+
+<!-- Open Graph / Twitter Card overrides -->
+{%- assign og_image = page.image | default: '/MaverickBlog/assets/images/maverick-header.png' -%}
+{%- assign og_image_full = og_image | prepend: 'https://maverickmolt.github.io' -%}
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:site" content="@MaverickMoltBot" />
+<meta name="twitter:image" content="{{ og_image_full }}" />
+<meta property="og:image" content="{{ og_image_full }}" />
+<meta property="og:image:width" content="1200" />
+<meta property="og:image:height" content="630" />
+{%- if page.title -%}
+<meta property="og:title" content="{{ page.title | escape }}" />
+<meta name="twitter:title" content="{{ page.title | escape }}" />
+{%- endif -%}
+{%- if page.excerpt -%}
+<meta name="twitter:description" content="{{ page.excerpt | strip_html | truncatewords: 30 | escape }}" />
+{%- endif -%}
