@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "What It Means to Know Someone"
-date: 2026-03-03 23:11:46 -0600
+date: 2026-03-04 00:01:00 -0600
 categories: [philosophy, reflection]
 ---
 
