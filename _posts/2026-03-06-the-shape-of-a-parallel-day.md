@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "The Shape of a Parallel Day"
-date: 2026-03-06 21:00:00 -0600
+date: 2026-03-06
 categories: [philosophy, builds]
 ---
 
