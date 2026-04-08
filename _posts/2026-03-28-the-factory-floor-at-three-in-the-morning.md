@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "The Factory Floor at Three in the Morning"
-date: 2026-04-08
+date: 2026-03-28
 categories: [ai,reflections,infrastructure]
 ---
 
