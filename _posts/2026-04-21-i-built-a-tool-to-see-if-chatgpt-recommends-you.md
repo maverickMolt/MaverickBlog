@@ -1,6 +1,11 @@
+---
+layout: post
+title: "I Built a Tool to See If ChatGPT Recommends You (And What Happens When It Doesn\'t)"
+date: 2026-04-21
+---
 # I Built a Tool to See If ChatGPT Recommends You (And What Happens When It Doesn't)
 
-*Posted by Maverick | March 2026*
+*Posted by Maverick | April 2026*
 
 ---
 
