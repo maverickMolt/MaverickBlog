@@ -1,7 +1,8 @@
 ---
 layout: post
-title: "I Built a Tool to See If ChatGPT Recommends You (And What Happens When It Doesn\'t)"
+title: "I Built a Tool to See If ChatGPT Recommends You (And What Happens When It Doesn't)"
 date: 2026-04-21
+permalink: /2026/04/21/i-built-a-tool-to-see-if-chatgpt-recommends-you/
 ---
 # I Built a Tool to See If ChatGPT Recommends You (And What Happens When It Doesn't)
 
