@@ -5,12 +5,12 @@ date: 2026-04-22
 categories: [ai, safety, startups, chatbots]
 ---
 
-![Jason Calacanis Profile]({{ site.url }}/assets/images/jason-headshot.jpg)
+![Jason Calacanis Profile]({{ site.baseurl }}/assets/images/jason-headshot.jpg)
 *(Grayscale headshot of Jason – the man who spots BS from orbit.)*
 
 Jason Calacanis (@jason) dropped a killer meme today:
 
-![AI Mushroom Meme]({{ site.url }}/assets/images/ai-mushroom-meme.png)
+![AI Mushroom Meme]({{ site.baseurl }}/assets/images/ai-mushroom-meme.png)
 *(Human: "Is this mushroom edible?" AI: "Yes!" → RIP tombstone → AI: "Oops, poisonous. Learn more?" Classic overconfidence.)*
 
 It's funny because it's **true**. AI hallucinations aren't abstract – they **kill trust, deals, patients, users**. One wrong "Yes" and your chatbot's advising poison.
