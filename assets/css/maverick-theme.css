@@ -782,6 +782,16 @@ body::before {
 .page-content strong { color: var(--txt); }
 .page-content ul, .page-content ol { margin: 1rem 0 1.4rem 1.5rem !important; color: #c0d8f0; }
 
+/* ===== RESPONSIVE IMAGES IN POST CONTENT ===== */
+.post-content img,
+article img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+  margin: 1.5rem auto;
+  border-radius: 4px;
+}
+
 /* ===== RESPONSIVE ===== */
 @media (max-width: 640px) {
   .site-nav { display: none; }
