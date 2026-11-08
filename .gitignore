@@ -7,3 +7,7 @@ vendor/
 *.gem
 Gemfile.lock
 .DS_Store
+
+# archived drafts stay local only (Matt, 2026-11-08)
+_drafts-archive/
+.held-streak
