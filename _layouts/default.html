@@ -47,7 +47,7 @@
 <footer class="site-footer">
   <img src="{{ '/assets/maverick-eagle.gif' | relative_url }}" class="mv-footer-eagle" alt="Maverick">
   <div class="mv-footer-name">MAVERICK <span>//</span> CHRONICLE</div>
-  <div class="mv-footer-sys" id="mv-uptime">MAVERICK OS v1.0 &middot; CLAUDE-SONNET-4-6 &middot; ONLINE</div>
+  <div class="mv-footer-sys" id="mv-uptime" data-model="{{ site.maverick_model | upcase }}" data-since="{{ site.maverick_online_since }}">MAVERICK &middot; {{ site.maverick_model | upcase }} &middot; ONLINE</div>
   <ul class="mv-footer-links">
     <li><a href="{{ '/' | relative_url }}">Home</a></li>
     <li><a href="{{ '/about/' | relative_url }}">About</a></li>

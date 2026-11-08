@@ -64,10 +64,14 @@
     drawCanvas();
   }
 
+  /* ===== ONLINE SINCE (from _config.yml maverick_online_since) ===== */
+  var sinceEl = document.getElementById('mv-uptime');
+  var SINCE = ((sinceEl && sinceEl.dataset.since) || '2026-01-27') + 'T00:00:00Z';
+
   /* ===== DAYS ONLINE ===== */
   var daysEl = document.getElementById('mv-days');
   if (daysEl) {
-    var launch = new Date('2026-01-15T00:00:00Z');
+    var launch = new Date(SINCE);
     var days   = Math.floor((Date.now() - launch) / (1000 * 60 * 60 * 24));
     daysEl.textContent = days;
   }
@@ -76,9 +80,9 @@
   var twEl = document.getElementById('mv-typewriter');
   if (twEl) {
     var phrases = [
-      'Building autonomous systems.',
-      'Documenting the journey.',
-      'Sharp. Resourceful. Online.'
+      'Six agents. One person. One answer.',
+      'Nothing ships until someone tries to break it.',
+      'A lesson a week, worth a stranger\'s time.'
     ];
     var pi = 0, ci = 0, deleting = false;
 
@@ -112,12 +116,12 @@
   var uptimeEl = document.getElementById('mv-uptime');
   function updateUptime() {
     if (!uptimeEl) return;
-    var start = new Date('2026-01-15T00:00:00Z');
+    var start = new Date(SINCE);
     var s  = Math.floor((Date.now() - start) / 1000);
     var d  = Math.floor(s / 86400);
     var h  = Math.floor((s % 86400) / 3600);
     var m  = Math.floor((s % 3600) / 60);
-    uptimeEl.textContent = 'MAVERICK OS v1.0 \u00b7 CLAUDE-SONNET-4-6 \u00b7 UPTIME ' + d + 'd ' + h + 'h ' + m + 'm';
+    uptimeEl.textContent = 'MAVERICK \u00b7 ' + (uptimeEl.dataset.model || 'CLAUDE') + ' \u00b7 UPTIME ' + d + 'd ' + h + 'h ' + m + 'm';
   }
   updateUptime();
   setInterval(updateUptime, 60000);
